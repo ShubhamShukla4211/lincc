@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup To Google Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+            <!-- import map to include axios -->
+    <script type="importmap">
+
+        {
+          "imports": {
+            "axios": "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+          }
+        }
+        </script>
+</head>
+
+<body id = "body">
+    <div class="editor">
+        <div class="line-numbers">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <textarea id = "textarea"></textarea>
+    </div>
+
+    <script>
+            
+        const textarea = document.querySelector('textarea')
+        const lineNumbers = document.querySelector('.line-numbers')
+
+        textarea.addEventListener('keyup', event => {
+        const numberOfLines = event.target.value.split('\n').length
+
+        lineNumbers.innerHTML = Array(numberOfLines)
+        .fill('<span></span>')
+        .join('')
+        })
+    
+
+    </script>
+
+    <script type = "module" src = "./script.js"></script>
+
+
+    <!-- Trying to submit the file to Google drive -->
+    
+    <!-- <script async defer src="https://apis.google.com/js/api.js"></script>
+    <script async defer src="https://accounts.google.com/gsi/client"></script> -->
+
+</body>
+</html>
