@@ -19,7 +19,7 @@ function activate(context) {
 
 	let disposable = vscode.commands.registerCommand('alinc.helloWorld', function () {
 
-		vscode.window.showInformationMessage('Hello World from Linc!');
+		vscode.window.showInformationMessage('Linc is opening your file in the browser!');
 		
 		let textwhat = vscode.window.activeTextEditor.document.getText();
 		module.exports.textWhat;
