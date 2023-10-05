@@ -33,7 +33,7 @@ function activate(context) {
 
 		//Using the fetch API to post the the text from the ActiveTextDocument
 		fetch(url, {
-  			method: "POST", // Specify the method
+  			method: "POST", 
   			headers: {
     					"Content-Type": "text/plain"
   					 },

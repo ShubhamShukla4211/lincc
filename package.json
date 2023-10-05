@@ -1,6 +1,7 @@
 {
-  "name": "alinc",
-  "displayName": "alinc",
+  "name": "linc",
+  "publisher": "SHUBHAMSHUKLA",
+  "displayName": "linc",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -15,7 +16,7 @@
     "commands": [
       {
         "command": "alinc.helloWorld",
-        "title": "Hello World"
+        "title": "Open In Browser"
       }
     ]
   },
